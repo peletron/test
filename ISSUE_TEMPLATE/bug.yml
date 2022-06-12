@@ -1,0 +1,70 @@
+name: "🐛 Bug report"
+description: Report a bug found while using Berty app.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? 👉 [Start a new discussion in Discord](https://crpt.fyi/berty-discord)
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+       1. Navigate to the ...
+       2. Click on the user...
+       3. Change name of '...'
+       4. Click Save button...
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current behavior
+      description: A description including screenshots, stack traces, DEBUG logs, etc.
+      placeholder: Currently...
+    validations:
+      required: true
+  - type: textarea
+    id: desired-behavior
+    attributes:
+      label: Desired behavior
+      description: Please proview what would be your expectation to happen.
+      placeholder: In this situation, Berty should...
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot/Video
+      description: Please provide some screenshot or video of issue
+      placeholder: Attach screenshot or video
+    validations:
+      required: true   
+  - type: dropdown
+    id: os
+    attributes:
+      label: What OS are you seeing the problem on?
+      multiple: true
+      options:
+        - iOS
+        - Android 
+  - type: input
+    id: version
+    attributes:
+      label: OS version
+      description: What current OS version you are using? 
+      placeholder: ex. iOS 15.4 or Android 11.0 
+    validations:
+      required: true
+  - type: input
+    id: mobile-device
+    attributes:
+      label: Mobile device
+      description: What mobile devices you are using?
+      placeholder: ex. iPhone 12 Pro Max or Samsung Galaxy S22+ 
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Other
+      placeholder: Any other details? 
