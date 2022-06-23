@@ -1,7 +1,7 @@
 name: "🐛 Bug report"
-description: Report a bug found while using the Berty apps or packages
+description: Report a bug found while using the Berty apps or packages.
 labels: ["bug", "Ready for Review"]
-assignees: 
+assignees:
 - peletron
 body:
   - type: checkboxes
@@ -28,7 +28,7 @@ body:
     attributes:
       label:  Berty product version
       description: What is the version of this Berty product?
-      placeholder: You can find the version of the mobile and desktop apps in the settings. To display the CLI tool version, run `berty version`.
+      placeholder: e.g. 2.396.1
     validations:
       required: true
   - type: dropdown
@@ -39,10 +39,11 @@ body:
       multiple: true
       options:
         - iOS
-        - Android 
-        - Linux 
+        - Android
+        - Linux
         - macOS
         - Windows
+        - Other
     validations:
       required: true
   - type: input
@@ -54,11 +55,11 @@ body:
     validations:
       required: true
   - type: input
-    id: mobile-device
+    id: device
     attributes:
-      label: Mobile device (if applicable)
-      description: What mobile devices are you using?
-      placeholder: ex. iPhone 12 Pro Max or Samsung Galaxy S22+  
+      label: Device
+      description: What devices are you using?
+      placeholder: e.g. iPhone 12 Pro Max or a synology NAS
   - type: textarea
     id: reproduction
     attributes:
@@ -76,7 +77,7 @@ body:
     attributes:
       label: Current behavior
       description: A description including screenshots, stack traces, debug logs, etc.
-      placeholder: Currently...
+      placeholder: Currently ...
     validations:
       required: true
   - type: textarea
@@ -84,7 +85,7 @@ body:
     attributes:
       label: Expected behavior
       description: Please provide what would be your expectation to happen.
-      placeholder: In this situation, Berty should...
+      placeholder: In this situation, Berty should ...
   - type: textarea
     id: other
     attributes:
