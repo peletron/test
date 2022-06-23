@@ -27,7 +27,9 @@ body:
     id: product-version
     attributes:
       label:  Berty product version
-      description: |+ What is the version of this Berty product?
+      description: |+ 
+                  What is the version of this Berty product?
+ 
                   You can find the version of the mobile and desktop apps in the settings.
                   To display the CLI tool version, run `berty version`.
       placeholder: e.g 2.396.1
