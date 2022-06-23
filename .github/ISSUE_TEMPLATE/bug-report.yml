@@ -23,7 +23,7 @@ body:
         - Code package
     validations:
       required: true
-  - type: textarea
+  - type: markdown
     id: product-version
     attributes:
       label:  Berty product version
