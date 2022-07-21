@@ -1,6 +1,8 @@
 name: "Bug report"
 description: Report a bug for this project.
 labels: ["bug", "🔍 Ready for Review"]
+assignees:
+- peletron
 body:
   - type: checkboxes
     attributes:
@@ -10,19 +12,19 @@ body:
       - label: I have searched the existing issues
         required: true
   - type: input
-    id: go-version
-    attributes:
-      label: Golang version
-      description: What version of Golang are you using?
-      placeholder: go1.18.4
-    validations:
-      required: true
-  - type: input
     id: package-version
     attributes:
       label: Package version
       description: What version of go-ipfs-log package are you using?
       placeholder: v1.8.0
+    validations:
+      required: true
+  - type: input
+    id: go-version
+    attributes:
+      label: Golang version
+      description: What version of Golang are you using?
+      placeholder: go1.18.4
     validations:
       required: true
   - type: textarea
@@ -36,23 +38,23 @@ body:
     id: code-snippet
     attributes:
       label: Code snippet
-      description: Provide a code snippet where are you getting the issue.
+      description: Provide a code snippet where you are getting the issue.
     validations:
       required: true
   - type: textarea
-    id: current-behaviour
+    id: current-behavior
     attributes:
-      label: Current behaviour
+      label: Current behavior
       description: A output after code execution including stack traces, debug logs, etc.
-      placeholder: Currently ..
+      placeholder: Currently ...
     validations:
       required: true
   - type: textarea
-    id: expected-behaviour
+    id: expected-behavior
     attributes:
-      label: Expected behaviour
+      label: Expected behavior
       description: Please provide what would be your expectation to happen.
-      placeholder: In this situation, output of the code should ..
+      placeholder: In this situation, the output of the code should ...
     validations:
       required: true
   - type: textarea
