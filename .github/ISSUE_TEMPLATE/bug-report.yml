@@ -32,7 +32,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: context
+    id: go-version
     attributes:
       label: version
       description: What version of Golang your using?
@@ -40,7 +40,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: context
+    id: package-version
     attributes:
       label: version
       description: What version of go-ipfs-log package you are using?
@@ -48,7 +48,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: context
+    id: environment
     attributes:
       label: Environment
       description: What is your development environment?
