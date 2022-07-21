@@ -31,7 +31,7 @@ body:
       placeholder: Currently ..
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: go-version
     attributes:
       label: Golang version
@@ -39,7 +39,7 @@ body:
       placeholder: go1.18.4
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: package-version
     attributes:
       label: Package version
