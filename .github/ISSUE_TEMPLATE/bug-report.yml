@@ -26,7 +26,7 @@ body:
   - type: textarea
     id: current-behaviour
     attributes:
-      label: current-behaviour
+      label: Current behaviour
       description: A output after code execution including stack traces, debug logs, etc.
       placeholder: Currently ..
     validations:
@@ -34,7 +34,7 @@ body:
   - type: textarea
     id: go-version
     attributes:
-      label: version
+      label: Golang version
       description: What version of Golang your using?
       placeholder: go1.18.4
     validations:
@@ -42,7 +42,7 @@ body:
   - type: textarea
     id: package-version
     attributes:
-      label: version
+      label: Package version
       description: What version of go-ipfs-log package you are using?
       placeholder: v1.8.0
     validations:
